@@ -1,0 +1,40 @@
+﻿@model DAL.Product
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Product</h2>
+<hr />
+@using (Html.BeginForm(new { @class = "col s12" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="input-field col s6">
+            @Html.EditorFor(model => model.Product_title, new { htmlAttributes = new { @class = "validate" } })
+            @Html.LabelFor(model => model.Product_title)
+        </div>
+        <div class="input-field col s6">
+            @Html.EditorFor(model => model.Product_price, new { htmlAttributes = new { @class = "validate" } })
+            @Html.LabelFor(model => model.Product_price)
+        </div>
+        <div class="input-field col s6">
+            @Html.Action("_Categories")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6 center">
+            @Html.ActionLink("Back", "Index", new object { }, new { @class = "btn", type = "button" })
+        </div>
+        <div class="col s6 center">
+            <input type="submit" value="Create" class="btn" />
+        </div>
+    </div>
+}
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+    </script>
+    }

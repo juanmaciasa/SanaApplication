@@ -1,0 +1,10 @@
+﻿@model IEnumerable<DAL.VIEW_CATEGORIES>
+
+<select multiple name="categories" id="categories">
+    <option value="" disabled selected>Choose your option</option>
+    @foreach (var item in Model)
+    {
+        <option value="@item.Category_id">@item.Category_name</option>
+    }
+</select>
+<label>Categories</label>

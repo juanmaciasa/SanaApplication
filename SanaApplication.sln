@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "SanaApplication\GUI.csproj", "{053EF14F-A4BE-49A1-AFD7-917133E1BF17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{6C275676-13CE-4B14-9426-0A16D9F6BC57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{906B24FA-8C48-40FE-B3ED-C4259FD497ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{053EF14F-A4BE-49A1-AFD7-917133E1BF17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053EF14F-A4BE-49A1-AFD7-917133E1BF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053EF14F-A4BE-49A1-AFD7-917133E1BF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053EF14F-A4BE-49A1-AFD7-917133E1BF17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C275676-13CE-4B14-9426-0A16D9F6BC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C275676-13CE-4B14-9426-0A16D9F6BC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C275676-13CE-4B14-9426-0A16D9F6BC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C275676-13CE-4B14-9426-0A16D9F6BC57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{906B24FA-8C48-40FE-B3ED-C4259FD497ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{906B24FA-8C48-40FE-B3ED-C4259FD497ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{906B24FA-8C48-40FE-B3ED-C4259FD497ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{906B24FA-8C48-40FE-B3ED-C4259FD497ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
