@@ -6,6 +6,16 @@
 <h2>Products</h2>
 @Html.ActionLink("Create Product", "Create", new object { }, new { @class = "btn", type = "button" })
 <hr />
+<br />
+<div class="switch">
+    <label>
+        In-Memory
+        <input id="storage" name="storage" type="checkbox" @ViewBag.currentStorage onchange="onChangeStorage()" />
+        <span class="lever"></span>
+        DataBase
+    </label>
+</div>
+<br />
 <table>
     <tr>
         <th>Product Number</th>
@@ -17,8 +27,19 @@
         <tr>
             <td>@item.Product_id</td>
             <td>@item.Product_title</td>
-            <td>@item.Product_price</td>            
+            <td>@item.Product_price</td>
         </tr>
     }
 </table>
-
+@section scripts{
+    <script>
+        function onChangeStorage() {
+            if ($("#storage").prop("checked") == true) {
+                window.location.assign('/Product/Index');
+            }
+            else {
+                window.location.assign('/Product/Index/1');
+            }
+        }
+    </script>
+}

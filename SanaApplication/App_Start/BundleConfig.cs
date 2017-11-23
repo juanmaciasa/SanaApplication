@@ -21,8 +21,7 @@ namespace SanaApplication
                         "~/Scripts/materialize.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/materialize.min.css",
-                      "~/Content/site.css"));
+                      "~/Content/materialize.min.css"));
         }
     }
 }

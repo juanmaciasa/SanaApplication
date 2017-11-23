@@ -21,6 +21,17 @@
             @Html.Action("_Categories")
         </div>
     </div>
+    <div class="switch">
+        <label>
+            In-Memory
+            <input id="storage" name="storage" type="checkbox" checked>
+            <span class="lever"></span>
+            DataBase
+        </label>
+    </div>
+    <br />
+    <hr />
+    <br />
     <div class="row">
         <div class="col s6 center">
             @Html.ActionLink("Back", "Index", new object { }, new { @class = "btn", type = "button" })
@@ -29,6 +40,7 @@
             <input type="submit" value="Create" class="btn" />
         </div>
     </div>
+
 }
 
 @section scripts{
@@ -37,4 +49,4 @@
             $('select').material_select();
         });
     </script>
-    }
+}
